@@ -1,124 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Template</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f9f6;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-        }
-        .sidebar {
-            text-align: center;
-            background-color: #00000007;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(248, 219, 210, 0.762);
-        }
-        .profile-pic {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
-        .info h2 {
-            margin: 0;
-        }
-        .info p {
-            margin: 5px 0;
-            color: #777;
-        }
-        .social-icons a {
-            margin: 0 10px;
-            color: #0037ff;
-            text-decoration: none;
-        }
-        .main {
-            margin-top: 20px;
-        }
-        .section {
-            background-color: #ffffff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
-        .section h2 {
-            margin-top: 0;
-        }
-        .direct-message {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .direct-message button {
-            padding: 10px 20px;
-            background-color: #0037ff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="code.css">
 </head>
 <body>
-
-<div class="container">
-    <div class="sidebar">
-        <div class="info">
-            <img src="profile.jpg" alt="MITHIRAN P A" class="profile-pic">
-            <h2>MITHIRAN P A</h2>
-            <p>FullStack Developer</p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/your-profile" target="_blank">Facebook</a>
-                <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
-                <a href="https://twitter.com/your-profile" target="_blank">Twitter</a>
-            </div>
-            <p><strong>Phone:</strong> 6374231389</p>
-            <p><strong>Email:</strong> mithiranpa@gmail.com</p>
-            <p><strong>Location:</strong> Kinatukadavu, Coimbatore</p>
-            <button>Download Resume</button>
-        </div>
+  <header class="hero">
+    <div class="container">
+      <h1>Hi, I'm <span class="highlight">MITHIRAN P A</span></h1>
+      <p class="tagline">A Passionate Full-Stack Developer</p>
+      <a href="#projects" class="btn">See My Work</a>
     </div>
-    <div class="main">
-        <div class="section" id="about">
-            <h2>About Me</h2>
-            <p>Hello there! I'm thrilled to welcome you to my portfolio. I am a passionate and versatile full-stack developer with a keen interest in exploring the latest cutting-edge technologies. My journey in the world of web development has been nothing short of exhilarating, and I constantly strive to enhance my skills and embrace emerging trends in the industry.</p>
-        </div>
-        <div class="section" id="technical-skills">
-            <h2>Technical Skills</h2>
-            <ul>
-                <li>HTML, CSS, JavaScript</li>
-                <li>React, Node.js, Next.js</li>
-                <li>Python, Django</li>
-            </ul>
-        </div>
-        <div class="section" id="projects">
-            <h2>Projects</h2>
-            <p>Here are some of the exciting projects I've worked on:</p>
-            <ul>
-                <li>Project 1: A web application built with React and Node.js.</li>
-                <li>Project 2: An e-commerce platform developed using Django.</li>
-                <li>Project 3: A mobile app created with Flutter and Firebase.</li>
-            </ul>
-        </div>
-        <div class="section" id="contact">
-            <h2>Contact</h2>
-            <p>If you'd like to get in touch, feel free to reach out via any of the following methods:</p>
-            <p><strong>Email:</strong> mithiranpa@gmail.com</p>
-            <p><strong>Phone:</strong> 6374231389</p>
-            <p>Alternatively, you can connect with me on social media using the links above.</p>
-        </div>
-        <div class="Send Message">
-            <button>Send Message</button>
-        </div>
-    </div>
-</div>
+  </header>
 
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I’m a developer specializing in building high-quality web applications.
+        With experience in front-end and back-end technologies, I aim to craft seamless user experiences.
+      </p>
+      <a href="YourResume.pdf" download class="btn">Download Resume</a>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project">
+          <img src="project1.jpg" alt="Project 1">
+          <h3>Project 1</h3>
+          <p>A brief description of the project.</p>
+          <a href="https://project1-demo.com" class="btn" target="_blank">Live Demo</a>
+        </div>
+        <div class="project">
+          <img src="project2.jpg" alt="Project 2">
+          <h3>Project 2</h3>
+          <p>A brief description of the project.</p>
+          <a href="https://project2-demo.com" class="btn" target="_blank">Live Demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Your Name | Built with ❤️</p>
+      <div class="social-links">
+        <a href="https://github.com" target="_blank">GitHub</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+      </div>
+    </div>
+  </footer>
+  <script src="code.js"></script>
 </body>
 </html>
