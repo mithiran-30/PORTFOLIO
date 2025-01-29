@@ -1,73 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="code.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Full Stack Developer Portfolio</title>
+    <link href="code.css" rel="stylesheet">
 </head>
 <body>
-  <header class="hero">
-    <div class="container">
-      <h1>Hi, I'm <span class="highlight">MITHIRAN P A</span></h1>
-      <p class="tagline">A Passionate Full-Stack Developer</p>
-      <a href="#projects" class="btn">See My Work</a>
-    </div>
-  </header>
 
-  <section id="about" class="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        I’m a developer specializing in building high-quality web applications.
-        With experience in front-end and back-end technologies, I aim to craft seamless user experiences.
-      </p>
-      <a href="YourResume.pdf" download class="btn">Download Resume</a>
-    </div>
-  </section>
+    <!-- Header Section -->
+    <header>
+        <h1>MITHIRAN P A</h1>
+        <p>Full-Stack Developer | UI/UX Enthusiast | Open Source Contributor</p>
+    </header>
 
-  <section id="projects" class="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project-list">
-        <div class="project">
-          <img src="project1.jpg" alt="Project 1">
-          <h3>Project 1</h3>
-          <p>A brief description of the project.</p>
-          <a href="https://project1-demo.com" class="btn" target="_blank">Live Demo</a>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Mithiran P A, a passionate developer who specializes in creating user-friendly web applications. My goal is to help businesses and individuals achieve their vision through innovative digital solutions. I have experience working with the latest technologies and strive for excellence in every project I undertake.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript, TypeScript</li>
+            <li>React, Vue.js, Angular, Svelte</li>
+            <li>Node.js, Express, MongoDB, PostgreSQL</li>
+            <li>Python, Django, Flask, AI & Machine Learning</li>
+            <li>UI/UX Design, Figma, Adobe XD</li>
+        </ul>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Services</h2>
+        <div class="service">
+            <h3>Web Development</h3>
+            <p>Building modern, responsive, and user-friendly websites using the latest technologies.</p>
         </div>
-        <div class="project">
-          <img src="project2.jpg" alt="Project 2">
-          <h3>Project 2</h3>
-          <p>A brief description of the project.</p>
-          <a href="https://project2-demo.com" class="btn" target="_blank">Live Demo</a>
+        <div class="service">
+            <h3>Mobile App Development</h3>
+            <p>Creating smooth and responsive mobile applications with a focus on user experience.</p>
         </div>
-      </div>
-    </div>
-  </section>
+        <div class="service">
+            <h3>UI/UX Design</h3>
+            <p>Designing intuitive and visually appealing user interfaces to enhance user engagement.</p>
+        </div>
+    </section>
 
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-    </div>
-  </section>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Portfolio Website</h3>
+                <p>A personal portfolio showcasing my skills, services, and projects.</p>
+            </div>
+            <div class="card">
+                <h3>E-Commerce App</h3>
+                <p>A powerful, scalable e-commerce platform with a smooth user experience.</p>
+            </div>
+            <div class="card">
+                <h3>Social Media Platform</h3>
+                <p>A real-time social media app with chat and media sharing capabilities.</p>
+            </div>
+        </div>
+    </section>
 
-  <footer class="footer">
-    <div class="container">
-      <p>© 2025 Your Name | Built with ❤️</p>
-      <div class="social-links">
-        <a href="https://github.com" target="_blank">GitHub</a>
-        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-        <a href="https://twitter.com" target="_blank">Twitter</a>
-      </div>
-    </div>
-  </footer>
-  <script src="code.js"></script>
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What Clients Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-card">
+                <h4>Client A</h4>
+                <p>"John is an amazing developer, his skills and attention to detail are outstanding!"</p>
+                <span>- CEO, Company</span>
+            </div>
+            <div class="testimonial-card">
+                <h4>Client B</h4>
+                <p>"Excellent work, John. The project was delivered on time and exceeded our expectations!"</p>
+                <span>- Marketing Manager, Company</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you would like to collaborate on a project, feel free to reach out to me:</p>
+        <div class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Connect with me on <a href="#">GitHub</a> | <a href="#">LinkedIn</a></p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">↑</div>
+
+    <script src="code.js"></script>
+
 </body>
 </html>
